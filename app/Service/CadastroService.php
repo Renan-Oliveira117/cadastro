@@ -19,8 +19,6 @@ class CadastroService
                 
             ];
         }catch(Exception $erro){
-         dd($erro)->getMessage();
-            DB::rollBack();
             return[
                 'status'=> false,
                 'cadastro'=> $erro->getMessage(),
