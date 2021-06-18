@@ -12,7 +12,7 @@
             @if(isset($cadastro))
                 {!! Form::model($cadastro,['url' => route('cadastro.update' ,$cadastro), 'method'=>'put','files' => 'true'])!!}
             @else 
-                {!! Form::open(['url'=>route('cadastro.store')])!!}
+                {!! Form::open(['url'=>route('cadastro.store'),'files'=>'true'])!!}
             @endif
                 <div class="form-group">
                     {!! Form::label('nome', 'Nome')!!}
